@@ -1,234 +1,206 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Abdeladim Demnati</title>
+    <title>Abdeladim Demnati — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-    <header>
-      <h1 class="#">Bienvenue, je suis Abdeladim Demnati</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Accueil</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#Certifications">Certifications</a></li>
-        </ul>
-      </nav>
+
+    <!-- Navigation -->
+    <header id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">AD<span class="dot">.</span></a>
+        <nav>
+          <ul id="navMenu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#portfolio">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#Certifications">Certifications</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </header>
 
-    
+    <!-- Hero -->
     <section id="home" class="hero">
-      <h2>Junior Web Developer</h2>
-      <p>Frontend(HTML, CSS, JavaScript)<br />
-        BACKEND( SQL- PHP )
-      </p>
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="avatar">AD</div>
+        <p class="hero-greeting">Bonjour, je suis</p>
+        <h1>Abdeladim Demnati</h1>
+        <h2 class="hero-role">Junior Web Developer</h2>
+        <div class="hero-stack">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">PHP</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn btn-primary">Voir mes projets <i class="fas fa-arrow-down"></i></a>
+          <a href="https://github.com/abdeladimdemnati3-hash" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
     </section>
 
-  
+    <!-- Projects -->
     <section id="portfolio">
-      <h2 class="underline">Mes Projets</h2>
+      <div class="section-header">
+        <span class="section-label">Mes réalisations</span>
+        <h2>Projets</h2>
+      </div>
       <div class="projects">
-        <div class="card zoom-in">
-          <img src="img/project/2.png" alt="Aperçu du projet" />
-          <p>Featured Chinese Gadgets</p>
-          
-          <div>
-            
-            <button
-              class="btn"
-              onclick="
-                window.open(
-                  'https://github.com/abdeladimdemnati3-hash/afr.shop',
-                  '_blank',
-                )
-              "
-            >
-              💻 Code source
-            </button>
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img src="img/project/2.png" alt="Featured Chinese Gadgets" />
+          </div>
+          <div class="card-body">
+            <h3>Featured Chinese Gadgets</h3>
+            <p>Site e-commerce de gadgets avec interface moderne.</p>
+            <a href="https://github.com/abdeladimdemnati3-hash/afr.shop" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> Code source</a>
           </div>
         </div>
-<div class="card">
-          <img src="img/project/22.png" alt="Aperçu du projet" />
-          <p> BuyEase Pc</p>
-          
-          <div>
-         
-            <button
-              class="btn"
-              onclick="
-                window.open(
-                  'https://github.com/abdeladimdemnati3-hash/site-wep-front',
-                  '_blank',
-                )
-              "
-            >
-              💻 Code source
-            </button>
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img src="img/project/22.png" alt="BuyEase Pc" />
+          </div>
+          <div class="card-body">
+            <h3>BuyEase Pc</h3>
+            <p>Plateforme d'achat de composants informatiques.</p>
+            <a href="https://github.com/abdeladimdemnati3-hash/site-wep-front" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> Code source</a>
           </div>
         </div>
-        <div class="card ">
-          <img src="img/project/PHP.png" alt="Aperçu du projet" />
-          <p>php Auth</p>
-          
-          <div>
-         
-            <button
-              class="btn"
-              onclick="
-                window.open(
-                  'https://github.com/abdeladimdemnati3-hash/First_PHP',
-                  '_blank',
-                )
-              "
-            >
-              💻 Code source
-            </button>
-          </div>
-        </div>
-        <div class="card ">
-          <img src="img/project/re.png" alt="Aperçu du projet" />
-          <p>ecomerce </p>
-          
-          <div>
-         
-            <button
-              class="btn"
-              onclick="
-                window.open(
-                  'https://github.com/abdeladimdemnati3-hash/ecommerce_django_api',
-                  '_blank',
-                )
-              "
-            >
-              💻 Code source
-            </button>
-          </div>
-        </div>
-        
-        
        
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img src="img/project/re.png" alt="E-commerce Django" />
+          </div>
+          <div class="card-body">
+            <h3>E-commerce Django</h3>
+            <p>API e-commerce construite avec Django REST framework.</p>
+            <a href="https://github.com/abdeladimdemnati3-hash/ecommerce_django_api" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> Code source</a>
+          </div>
         </div>
-        </div>
-        
       </div>
     </section>
 
-    
-    <section id="skills" class="#">
-      <h2>LANGUAGES DE PROGRAMMATION</h2>
-      <ul class="block">
-        <li>
-          <img
-            src="img/html.png"
-            style="height: 24px; width: 24px"
-            class="img"
-            alt="HTML"
-          />
-          HTML
-        </li>
-        <li>
-          <img src="img/js.png" class="img" alt="JavaScript" /> JAVASCRIPT
-        </li>
-        <li>
-          <img src="img/PHP.png" class="img" alt="PHP" /> PHP 
-        </li>
-        <li>
-          <img src="img/sql.png" class="img" alt="SQL" /> SQL
-        </li>
-        <li>
-          <img src="img/python.png" class="img" alt="python" /> python
-        </li>
-        <!--<li><img src="img/php.png" class="img" alt="PHP" /> PHP</li>-->
-      </ul>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-header">
+        <span class="section-label">Mon expertise</span>
+        <h2>Compétences</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item reveal">
+          <img src="img/html.png" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="skill-item reveal">
+          <img src="img/js.png" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item reveal">
+          <img src="img/PHP.png" alt="PHP" />
+          <span>PHP</span>
+        </div>
+        <div class="skill-item reveal">
+          <img src="img/sql.png" alt="SQL" />
+          <span>SQL</span>
+        </div>
+        <div class="skill-item reveal">
+          <img src="img/python.png" alt="Python" />
+          <span>Python</span>
+        </div>
+      </div>
     </section>
-    
-     <section id="Certifications">
-      <br>
-      <center><h2>Certifications :</h2></center><br>
+
+    <!-- Certifications -->
+    <section id="Certifications">
+      <div class="section-header">
+        <span class="section-label">Mes diplômes</span>
+        <h2>Certifications</h2>
+      </div>
       <div class="projects">
-        <div class="card">
-          <img src="img/certefic/html-css.png" alt="Aperçu du projet" />
-          <p>Certification HTML && CSS</p>
-          
-          <div>
-            <button
-            
-              class="btn"
-              onclick="
-                window.open(
-                  'https://udemy-certificate.s3.amazonaws.com/pdf/UC-54b3c3f4-c00a-4eb1-b3f4-b31300db1044.pdf',
-                  '_blank',
-                )
-              "
-            >
-              📄 Voir la certification
-            </button>
-            
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img src="img/certefic/html-css.png" alt="Certification HTML & CSS" />
+          </div>
+          <div class="card-body">
+            <h3>HTML &amp; CSS</h3>
+            <p>Certification Udemy — Développement web frontend.</p>
+            <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-54b3c3f4-c00a-4eb1-b3f4-b31300db1044.pdf" target="_blank" class="btn btn-sm"><i class="fas fa-certificate"></i> Voir la certification</a>
           </div>
         </div>
-        <div class="card">
-          <img src="img/certefic/js.png" alt="Aperçu du projet" />
-          <p>Certification JavaScript</p>
-          
-          <div>
-            <button
-            
-              class="btn"
-              onclick="
-                window.open(
-                  'https://udemy-certificate.s3.amazonaws.com/pdf/UC-589c9383-7c90-4b7a-b6ee-4352be974825.pdf',
-                  '_blank',
-                )
-              "
-            >
-              📄 Voir la certification
-            </button>
-            
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img src="img/certefic/js.png" alt="Certification JavaScript" />
+          </div>
+          <div class="card-body">
+            <h3>JavaScript</h3>
+            <p>Certification Udemy — Programmation JavaScript avancée.</p>
+            <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-589c9383-7c90-4b7a-b6ee-4352be974825.pdf" target="_blank" class="btn btn-sm"><i class="fas fa-certificate"></i> Voir la certification</a>
           </div>
         </div>
-        <div class="card ">
-          <img src="img//certefic/php1.png" alt="Aperçu du projet" />
-          <p>Certification PHP</p>
-          
-          <div>
-            <button
-            
-              class="btn"
-              onclick="
-                window.open(
-                  'https://udemy-certificate.s3.amazonaws.com/pdf/UC-e2743400-7611-4ba7-9c94-b0f9d07f2dfb.pdf',
-                  '_blank',
-                )
-              "
-            >
-              📄 Voir la certification
-            </button>
-            
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img src="img/certefic/php1.png" alt="Certification PHP" />
           </div>
-          
+          <div class="card-body">
+            <h3>PHP</h3>
+            <p>Certification Udemy — Développement backend avec PHP.</p>
+            <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-e2743400-7611-4ba7-9c94-b0f9d07f2dfb.pdf" target="_blank" class="btn btn-sm"><i class="fas fa-certificate"></i> Voir la certification</a>
+          </div>
         </div>
-        
-
-        
-          
-        
       </div>
     </section>
-    <br>
-   
+
+    <!-- Footer -->
     <footer>
-      <p>
-        © 2026 Abdeladim Demnati |
-        <!--<a href="https://www.linkedin.com/in/abdeladim-demnati-118438382/"
-          >LinkedIn</a
-        >
-        | --><a href="https://github.com/abdeladimdemnati3-hash">GitHub</a>|
-        <a href="https://leetcode.com/u/ABDELADIM26/">leetcode</a>
-      </p>
+      <div class="footer-content">
+        <p class="footer-name">Abdeladim Demnati</p>
+        <div class="footer-links">
+          <a href="https://github.com/abdeladimdemnati3-hash" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/ABDELADIM26/" target="_blank" aria-label="LeetCode">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Abdeladim Demnati. Tous droits réservés.</p>
+      </div>
     </footer>
+
+    <script>
+      // Mobile menu
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      menuToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+      navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navMenu.classList.remove('open')));
+
+      // Sticky nav shadow
+      window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+      });
+
+      // Scroll reveal
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = (i * 0.08) + 's';
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
   </body>
 </html>
