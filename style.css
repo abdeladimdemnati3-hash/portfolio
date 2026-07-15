@@ -300,15 +300,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 12px;
 }
 .card-img-wrap--mobile img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 0;
-  box-shadow: none;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
 }
 .card-body {
   padding: 20px 22px 22px;
