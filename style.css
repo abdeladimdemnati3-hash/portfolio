@@ -295,7 +295,7 @@ section {
   transform: scale(1.06);
 }
 .card-img-wrap--mobile {
-  height: 340px;
+  height: 220px;
   background: linear-gradient(135deg, #0d1120 0%, #111827 100%);
   display: flex;
   align-items: center;
